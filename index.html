@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>For Döngüsü - Pâyidar</title>
+
+        <!-- Meta -->
+        <meta name="description" content="Pâyidar Mario Game." />
+
+        <style>
+            body {
+                margin: 0;
+            }
+
+            p {
+                font-family: sans-serif;
+                font-weight: bolder;
+                color: black;
+                text-align: center;
+                margin-top: 20px;
+                line-height: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="loop"></p>
+
+        <!-- Script -->
+        <script>
+            const cars = [
+                "Volvo",
+                "BMW",
+                "Audi",
+                "Toyota",
+                "Supra",
+                "Fiat",
+                "Ford"
+            ]
+
+            let text = "Araba Markaları;<br><hr>";
+
+            for (let i = 0; i < cars.length; i++) {
+                text += `${i + 1} - ` + cars[i] + `<br>`
+            }
+
+            document.getElementById('loop').innerHTML = text
+        </script>
+    </body>
+</html>
